@@ -24,7 +24,7 @@
 
     <x-mary-main with-nav full-width>
         <x-slot:sidebar drawer="main-drawer" collapsible class="bg-base-200">
-            @if($user = auth()->user())
+            @if($user = auth()->admin())
                 <x-mary-list-item :item="$user" value="name" sub-value="email" no-separator no-hover class="pt-2">
                     <x-slot:actions>
                         <x-mary-button icon="o-power" class="btn-circle btn-ghost btn-xs" tooltip-left="logoff" link="/logout" />

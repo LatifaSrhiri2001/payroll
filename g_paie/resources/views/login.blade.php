@@ -10,8 +10,8 @@
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   <title>Login admin</title>
 </head>
-<body>
-  <div class="max-w-md w-10 mx-auto mt-10">
+<body class="">
+  <div class="max-w-md w-50 mx-auto mt-10 ">
     <h2 class="text-2xl font-semibold text-center mb-6">Admin Login</h2>
     
     {{-- Error Alert --}}
@@ -26,7 +26,7 @@
     @endif
     
     {{-- Login Form --}}
-    <form action="{{ route('admin.login') }}" method="POST" class="bg-white p-6 rounded-lg shadow-md dark:bg-gray-800">
+    <form action="{{ route('admin.login') }}" method="POST" class=" p-6 rounded-lg shadow-md dark:bg-gray-800">
         @csrf
         
         {{-- Email Input --}}
@@ -61,7 +61,7 @@
         @enderror
 
         {{-- Submit Button --}}
-        <button type="submit" class="w-full mt-4">
+        <button type="submit" class="w-full mt-4 bg-blue-400 px-4 border-spacing-4 ">
             Login
         </button>
     </form>
