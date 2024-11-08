@@ -13,7 +13,7 @@
             <label for="main-drawer" class="lg:hidden mr-3">
                 <x-mary-icon name="o-bars-3" class="cursor-pointer" />
             </label>
-            <div>App</div>
+            <div>Paie</div>
         </x-slot:brand>
         <x-slot:actions>
             <x-mary-button label="Messages" icon="o-envelope" link="###" class="btn-ghost btn-sm" responsive />
@@ -53,7 +53,7 @@
     <x-mary-toast />
  {{-- sript dark light mode f --}}
     <script>
-        // On page load or when changing themes, best to add inline in head to avoid FOUC
+        // from flowbite to change themes 
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         } else {
