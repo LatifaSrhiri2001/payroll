@@ -26,14 +26,14 @@
     @endif
     
     {{-- Login Form --}}
-    <form action="{{ route('admin.login') }}" method="POST" class=" p-6 rounded-lg shadow-md dark:bg-gray-800">
+    <form action="{{ route('admin.login') }}" method="POST" class=" p-6   dark:bg-gray-800">
         @csrf
         
         {{-- Email Input --}}
         <x-mary-input 
             label="Email" 
             placeholder="Enter your email" 
-           
+           class="rounded-lg"
             type="email"
             name="email"
             :value="old('email')" 
@@ -48,7 +48,7 @@
         <x-mary-input 
         label="Password" 
         placeholder="Enter your password" 
-       
+       class="rounded-lg"
         type="password"
         name="password"
       
@@ -61,9 +61,9 @@
         @enderror
 
         {{-- Submit Button --}}
-        <button type="submit" class="w-full mt-4 bg-blue-400 px-4 border-spacing-4 ">
-            Login
-        </button>
+        
+<button type="submit" class="text-white bg-blue-400 dark:bg-blue-600  font-medium rounded-lg w-full text-sm mt-3 px-5 py-2.5 text-center" >Login</button>
+
     </form>
 </div>
 </body>
