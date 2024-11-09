@@ -6,7 +6,11 @@
 
 <div class="flex flex-row space-x-2">
 <x-mary-stat title="Primes" value="{{ number_format($prime, 2, ',', ' ') }} MAD" icon="o-currency-dollar" class="shadow separator" />
- 
+
+
+
+
+
 <x-mary-stat
     title="Employes"
   

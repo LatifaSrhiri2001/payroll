@@ -10,7 +10,7 @@ use Illuminate\View\View;
   use Illuminate\Support\Number;
   use App\Models\Absence;
   use App\Models\Employe;
-
+  use App\Models\Admin;
 class StatisticController extends Controller
 {
     
@@ -23,7 +23,8 @@ class StatisticController extends Controller
  
     
                
-                
+    $admin = Admin::where('email', 'admintest@example.com')->first();
+          
       $employe = DB::table('employes')->count();
       $prime = DB::table('primes')->avg('montant');
 
@@ -35,7 +36,7 @@ class StatisticController extends Controller
 
 $tauxAbsentéisme = ($totalAbsences / $joursTravailPossibles) * 100;
 
-      return view('dashboard', compact('employe' ,'prime' ,'tauxAbsentéisme'));
+      return view('dashboard', compact('employe' ,'prime' ,'tauxAbsentéisme','admin'));
   }
   
     
