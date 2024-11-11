@@ -60,6 +60,8 @@ class employeManagement extends Controller
             'date_embauche' => 'date',
             'salaire_base' => 'numeric',
             'anciennete' => 'integer',
+            'departement' => 'required',
+            'sexe' => 'required',
         ]);
 
         $employe->update($request->all());

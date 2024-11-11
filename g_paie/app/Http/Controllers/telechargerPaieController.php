@@ -14,10 +14,10 @@ class telechargerPaieController extends Controller {
         
         // Calculate all necessary data like in the showPaie method
         $salaireBase = $employe->salaire_base;
-        $tauxAnciennete = 5; // Example value
+        $tauxAnciennete = 5; 
         $primeAnciennete = $salaireBase * ($tauxAnciennete / 100);
         
-        // Example values for indemnités
+        
         $indemnitesImposables = [500, 200]; 
         $indemnitesNonImposables = [100];
         

@@ -13,7 +13,7 @@ class Employe extends Model
 
     protected $fillable = [
         'nom', 'prenom', 'cin', 'date_naissance', 'date_embauche', 'salaire_base', 
-        'situation_familiale', 'nombre_enfants', 'anciennete'
+        'situation_familiale', 'nombre_enfants', 'anciennete', 'sexe' , 'departement'
     ];
     
 

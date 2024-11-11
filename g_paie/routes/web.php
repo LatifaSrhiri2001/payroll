@@ -25,6 +25,7 @@ Route::get('admin/dashboard', [StatisticController::class, 'statistic'])->name('
 
 
 });
+Route::get('/', [utulisateurController::class, 'showLoginForm'])->name('admin.login');
 Route::get('admin/login', [AdminController::class, 'showLoginForm'])->name('admin.login');
 Route::post('admin/login', [AdminController::class, 'login']);
 Route::get('admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
